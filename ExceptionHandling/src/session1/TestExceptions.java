@@ -26,6 +26,10 @@ public class TestExceptions {
 //		System.out.println("Hello");
 	}
 	
+	/**
+	 * This method is written to generate IOException. This is a
+	 * checked exception so exception is mandatory to handle 
+	 */
 	private static void m11()  {
 		InputStreamReader isr = new InputStreamReader(System.in);//Node Stream
 		BufferedReader br = new BufferedReader(isr);//Filter Stream
@@ -37,6 +41,10 @@ public class TestExceptions {
 		}
 	}
 
+	/**
+	 * This method is written to generate ClassCastException. This is an
+	 * unchecked exception so exception is not mandatory to handle. 
+	 */
 	private static void m10() {
 		Object obj1 = new String("Raj");		
 		Object obj2 = new StringBuffer("Neha");
@@ -47,17 +55,29 @@ public class TestExceptions {
 		
 	}
 	
+	/**
+	 * This method is written to generate InputMismatchException. This is an
+	 * unchecked exception so exception is not mandatory to handle. 
+	 */
 	private static void m9() {
 		Scanner s = new Scanner(System.in);
 		System.out.println("Enter any number");
 		int n = s.nextInt();//java.util.InputMismatchException -> If enter wrong values
 	}
 	
+	/**
+	 * This method is written to generate ArrayIndexOutOfBoundsException. This is an
+	 * unchecked exception so exception is not mandatory to handle. 
+	 */
 	private static void m8() {
 		int[] arr = {23,34,56,2};
 		System.out.println(arr[5]); //java.lang.ArrayIndexOutOfBoundsException
 	}
 	
+	/**
+	 * This method is written to generate IndexOutOfBoundsException. This is an
+	 * unchecked exception so exception is not mandatory to handle. 
+	 */
 	private static void m7() {
 		ArrayList<Object> list = new ArrayList<>();
 		list.add(10);
@@ -65,20 +85,36 @@ public class TestExceptions {
 		System.out.println(list.get(3));// java.lang.IndexOutOfBoundsException
 	}
 	
+	/**
+	 * This method is written to generate ArithmeticException. This is an
+	 * unchecked exception so exception is not mandatory to handle. 
+	 */
 	private static void m6() {
 		System.out.println(10/0);//java.lang.ArithmeticException:
 	}
 	
+	/**
+	 * This method is written to generate IllegalArgumentException. This is an
+	 * unchecked exception so exception is not mandatory to handle. 
+	 */
 	private static void m5() {
 		Thread t = new Thread();
 		t.setPriority(20);  //java.lang.IllegalArgumentException
 	}
 	
+	/**
+	 * This method is written to generate ArrayIndexOutOfBoundsException. This is an
+	 * unchecked exception so exception is not mandatory to handle. 
+	 */
 	private static void m4() {
 		String str[] = {"Nilesh","Mohan"};
 		System.out.println(str[4]); //java.lang.ArrayIndexOutOfBoundsException
 	}
 
+	/**
+	 * This method is written to generate StringIndexOutOfBoundsException. This is an
+	 * unchecked exception so exception is not mandatory to handle. 
+	 */
 	private static void m1() {
 		String str = "Nilesh";
 		System.out.println(str.charAt(3));
@@ -86,6 +122,10 @@ public class TestExceptions {
 		System.out.println(str.charAt(6));  //java.lang.StringIndexOutOfBoundsException
 	}
 	
+	/**
+	 * This method is written to generate NumberFormatException. This is an
+	 * unchecked exception so exception is not mandatory to handle. 
+	 */
 	private static void m2() {
 		String str = "Raj";
 		//String str = "10";
@@ -94,6 +134,10 @@ public class TestExceptions {
 		
 	}
 	
+	/**
+	 * This method is written to generate NullPointerException. This is an
+	 * unchecked exception so exception is not mandatory to handle. 
+	 */
 	private static void m3() {
 		Scanner s = null;
 		//Scanner s = new Scanner(System.in);
