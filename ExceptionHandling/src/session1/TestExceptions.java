@@ -6,10 +6,17 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.Scanner;
-
+/**
+ * Sandeep Singh
+ */
 public class TestExceptions {
 	
 
+	/**
+	 * Logic to raise java exceptions are written 
+	 * outside to main method. The main() method 
+	 * which is used to calling methods only. 
+	 */
 	public static void main(String[] args) {
 //		m1();
 //		m2();
